@@ -1,7 +1,7 @@
 const ResumeButton = () => {
   return (
     <a
-      href="../../src/assets/cv/benjaminSCv.pdf"
+      href="../../assets/cv/benjaminSCv.pdf"
       download
       className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-4 flex w-32 gap-1"
     >
