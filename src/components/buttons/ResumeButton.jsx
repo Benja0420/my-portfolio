@@ -1,7 +1,7 @@
 const ResumeButton = () => {
   return (
     <a
-      href="../../assets/cv/benjaminSCv.pdf"
+      href="https://drive.google.com/file/d/1o2a-_D0CuXB3x4_2mX3tDR17670eeaDv/view?usp=drivesdk"
       download
       className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-4 flex w-32 gap-1"
     >
