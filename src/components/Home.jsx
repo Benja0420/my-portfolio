@@ -7,7 +7,7 @@ import YoutubeButton from "./buttons/YoutubeButton.jsx";
 function Home() {
   return (
     <Element name="home" className="bg-base h-[100vh] px-4">
-      <h1 className="text-pink-400 font-semibold text-6xl pt-16">
+      <h1 className="text-pink-400 font-semibold text-6xl pt-20">
         Benjamín <span className="text-pink-200 font-normal">Sepúlveda</span>
       </h1>
       <h2 className="text-pink-100 pt-4 text-3xl">Fullstack Developer</h2>

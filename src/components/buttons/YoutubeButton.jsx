@@ -2,6 +2,7 @@ const YoutubeButton = () => {
   return (
     <a
       href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      target="_blank"
       download
       className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-4 flex w-32 gap-1"
     >

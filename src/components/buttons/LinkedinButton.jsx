@@ -2,7 +2,7 @@ const LinkedinButton = () => {
   return (
     <a
       href="https://www.linkedin.com/in/benjamindsepulveda/"
-      download
+      target="_blank"
       className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-4 flex w-32 gap-1"
     >
       <svg

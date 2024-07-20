@@ -49,7 +49,7 @@ const SkillList = ({ title, skills }) => (
 
 const Skills = () => {
   return (
-    <Element name="skills" className="bg-base py-12 px-4">
+    <Element name="skills" className="bg-base h-[100vh] py-20 px-4">
       <h2 className="text-pink-400 font-semibold text-4xl text-center mb-8">
         Skills
       </h2>
