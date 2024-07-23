@@ -31,7 +31,7 @@ const interestedSkills = [
 
 const SkillList = ({ title, skills }) => (
   <div>
-    <h3 className="text-mocha-text text-2xl font-semibold mb-4">{title}</h3>
+    <h3 className="text-pink-400 text-2xl font-semibold mb-4">{title}</h3>
     <ul className="space-y-4">
       {skills.map((skill, index) => (
         <li key={index} className="flex items-center space-x-4">
@@ -40,7 +40,7 @@ const SkillList = ({ title, skills }) => (
             alt={`${skill.name} icon`}
             className="w-8 h-8"
           />
-          <span className="text-latte-subtext1">{skill.name}</span>
+          <span className="text-pink-300">{skill.name}</span>
         </li>
       ))}
     </ul>
@@ -49,7 +49,7 @@ const SkillList = ({ title, skills }) => (
 
 const Skills = () => {
   return (
-    <Element name="skills" className="bg-base h-[100vh] py-20 px-4">
+    <Element name="skills" className="bg-base min-h-[100vh] py-20 px-4">
       <h2 className="text-pink-400 font-semibold text-4xl text-center mb-8">
         Skills
       </h2>
@@ -57,9 +57,7 @@ const Skills = () => {
         <div className="grid gap-8 md:grid-cols-3">
           <SkillList title="Learned Skills" skills={learnedSkills} />
           <SkillList title="Learning Skills" skills={learningSkills} />
-          <SkillList
-            title="Skills Interested to Learn"
-            skills={interestedSkills}
+          <SkillList title="Skills Interested to Learn" skills={interestedSkills}
           />
         </div>
       </div>

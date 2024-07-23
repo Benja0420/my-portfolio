@@ -29,7 +29,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Element name="projects" className="bg-base h-[100vh] py-20 px-4">
+    <Element name="projects" className="bg-base min-h-[100vh] py-20 px-4">
       <h2 className="text-pink-400 font-semibold text-4xl text-center mb-8">
         Projects
       </h2>
