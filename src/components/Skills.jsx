@@ -25,6 +25,7 @@ const learnedSkills = [
   { name: "CSS", icon: css },
   { name: "JavaScript", icon: javascript },
   { name: "React", icon: react },
+  { name: "React Native", icon: react },
   { name: "Node.js", icon: node },
   { name: "Express", icon: express },
   { name: "Java", icon: java },
