@@ -7,26 +7,33 @@ import AnimationHome from "./AnimationHome.jsx";
 
 function Home() {
   return (
-    <Element name="home" className="bg-base min-h-[100vh] px-4 flex flex-wrap">
-      <div className="md:w-1/2 md:p-12">
-        <h1 className="text-pink-400 font-semibold text-6xl pt-20">
+    <Element name="home" className="bg-base h-[100vh] px-4 flex flex-col">
+      <div className="pt-20 z-20">
+        <h1 className="text-pink-400 font-semibold text-6xl text-center pt-4">
           Benjamín <span className="text-pink-200 font-normal">Sepúlveda</span>
         </h1>
-        <h2 className="text-pink-100 pt-4 text-3xl">Fullstack Developer</h2>
-        <p className="text-pink-50 pt-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A explicabo
-          deserunt esse veniam! Aut ea consectetur, iusto saepe iure maiores
-          vero tempore provident excepturi.
-        </p>
-        <div className="flex flex-wrap gap-2">
-          <ResumeButton />
-          <LinkedinButton />
-          <GithubButton />
-          <YoutubeButton />
-        </div>
+        <h2 className="text-pink-100 pt-4 text-3xl text-center">
+          Fullstack Developer
+        </h2>
       </div>
-      <div className="md:w-1/2 flex justify-center items-center ">
-        <AnimationHome />
+      <div className="flex flex-col">
+        <div className="lg:w-1/2 md:p-12">
+          <p className="text-pink-50 text-left pt-5 md:pt-24">
+            Soy Desarrollador Full Stack. Cuento con habilidades técnicas y
+            colaborativas en un entorno ágil. También reparo artefactos
+            tecnológicos por hobby. La curiosidad por la tecnología me llevó a
+            aprender de manera autodidacta sobre el mundo IT.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <ResumeButton />
+            <LinkedinButton />
+            <GithubButton />
+            <YoutubeButton />
+          </div>
+        </div>
+        <div className="hidden lg:block lg:absolute lg:right-0 lg:top-20">
+          <AnimationHome />
+        </div>
       </div>
     </Element>
   );

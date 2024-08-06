@@ -9,7 +9,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="bg-gray-950 py-4 px-12 md-px-28 rounded-full fixed top-4 left-1/2 transform -translate-x-1/2 z-10">
+        <nav className="bg-gray-950 py-4 px-12 md-px-28 rounded-full fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
             <ul className="flex justify-center space-x-4">
                 {navLinks.map((link) => (
                     <li key={link.to}>

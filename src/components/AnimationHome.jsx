@@ -11,7 +11,7 @@ const AnimationHome = () => {
     },
   };
 
-  return <Lottie options={defaultOptions}/>;
+  return <Lottie className='z-0' options={defaultOptions} height={750}/>;
 };
 
 export default AnimationHome;
