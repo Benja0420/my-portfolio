@@ -10,7 +10,7 @@ const About = () => {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="p-6">
               <h3 className="text-pink-400 text-2xl font-semibold mb-4">
-                ¿Quien soy?
+                ¿Quién soy?
               </h3>
               <p className="text-pink-50 mb-4">
                 Hola, soy Benjamín y vivo en Chillán, una ciudad pequeña de
@@ -30,10 +30,11 @@ const About = () => {
               <p className="text-pink-50 mb-4 ">
                 Actualmente, me dedico a ampliar mis conocimientos y habilidades
                 en tecnología. Estoy aprendiendo programación, enfocándome en
-                lenguajes como TypeScript y herramientas como Docker. En mi tiempo
-                libre, disfruto viendo anime, saliendo en bicicleta, juegos de mesa con los amigos y escalando.
-                Mi pasión por la tecnología y el deseo de ayudar a otros siempre
-                me motiva a seguir aprendiendo y mejorando.
+                lenguajes como TypeScript y herramientas como Docker. En mi
+                tiempo libre, disfruto viendo anime, saliendo en bicicleta,
+                juegos de mesa con los amigos y escalando. Mi pasión por la
+                tecnología y el deseo de ayudar a otros siempre me motiva a
+                seguir aprendiendo y mejorando.
               </p>
             </div>
           </div>
