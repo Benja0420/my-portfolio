@@ -4,7 +4,7 @@ const About = () => {
     return (
       <Element name="about" className="bg-base min-h-[100vh] py-20 px-4">
         <h2 className="text-pink-400 font-semibold text-4xl text-center">
-          About me
+          Sobre mí
         </h2>
         <div className="container mx-auto">
           <div className="grid gap-8 md:grid-cols-2">
@@ -27,7 +27,7 @@ const About = () => {
               <h3 className="text-pink-400 text-2xl font-semibold mb-4">
                 ¿Qué estoy haciendo?
               </h3>
-              <p className="text-pink-50 mb-4">
+              <p className="text-pink-50 mb-4 ">
                 Actualmente, me dedico a ampliar mis conocimientos y habilidades
                 en tecnología. Estoy aprendiendo programación, enfocándome en
                 lenguajes como TypeScript y herramientas como Docker. En mi tiempo
