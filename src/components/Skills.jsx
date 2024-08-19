@@ -72,14 +72,14 @@ const Skills = () => {
   return (
     <Element name="skills" className="bg-base min-h-[100vh] py-20 px-4">
       <h2 className="text-pink-400 font-semibold text-4xl text-center mb-8">
-        Skills
+        Habilidades Técnicas
       </h2>
       <div className="container mx-auto">
         <div className="grid gap-8 md:grid-cols-3">
-          <SkillList title="Learned Skills" skills={learnedSkills} />
-          <SkillList title="Learning Skills" skills={learningSkills} />
+          <SkillList title="Habilidades aprendidas" skills={learnedSkills} />
+          <SkillList title="Aprendiendo" skills={learningSkills} />
           <SkillList
-            title="Skills Interested to Learn"
+            title="Interesado en aprender"
             skills={interestedSkills}
           />
         </div>
