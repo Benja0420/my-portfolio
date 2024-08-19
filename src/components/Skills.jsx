@@ -78,10 +78,7 @@ const Skills = () => {
         <div className="grid gap-8 md:grid-cols-3">
           <SkillList title="Habilidades aprendidas" skills={learnedSkills} />
           <SkillList title="Aprendiendo" skills={learningSkills} />
-          <SkillList
-            title="Interesado en aprender"
-            skills={interestedSkills}
-          />
+          <SkillList title="Interesado en aprender" skills={interestedSkills} />
         </div>
       </div>
     </Element>
