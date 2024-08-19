@@ -10,24 +10,30 @@ const About = () => {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="p-6">
               <h3 className="text-pink-400 text-2xl font-semibold mb-4">
-                Who am I?
+                ¿Quien soy?
               </h3>
               <p className="text-pink-50 mb-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Eligendi facere recusandae totam nihil molestias aliquid id
-                praesentium nostrum minima, ducimus placeat? Similique adipisci
-                cum delectus! Quisquam, quidem. Quisquam, quidem.
+                Hola, soy Benjamín y vivo en Chillán, una ciudad pequeña de
+                Chile. Desde que era pequeño, me ha apasionado la tecnología. Me
+                encanta desarmar y armar cosas, lo que me ha permitido resolver
+                diversos problemas tecnológicos de amigos, familiares y
+                conocidos, ya sea formateando sus computadores o arreglando
+                programas que no funcionan. Además, disfruto mucho trabajando
+                con celulares Android, flasheando e instalando ROMs customizadas
+                como LineageOS.
               </p>
             </div>
             <div className="p-6">
               <h3 className="text-pink-400 text-2xl font-semibold mb-4">
-                What am I doing?
+                ¿Qué estoy haciendo?
               </h3>
               <p className="text-pink-50 mb-4">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Eligendi facere recusandae totam nihil molestias aliquid id
-                praesentium nostrum minima, ducimus placeat? Similique adipisci
-                cum delectus! Quisquam, quidem. Quisquam, quidem.
+                Actualmente, me dedico a ampliar mis conocimientos y habilidades
+                en tecnología. Estoy aprendiendo programación, enfocándome en
+                lenguajes como TypeScript y herramientas como Docker. En mi tiempo
+                libre, disfruto viendo anime, saliendo en bicicleta, juegos de mesa con los amigos y escalando.
+                Mi pasión por la tecnología y el deseo de ayudar a otros siempre
+                me motiva a seguir aprendiendo y mejorando.
               </p>
             </div>
           </div>

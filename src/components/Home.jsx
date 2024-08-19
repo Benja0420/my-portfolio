@@ -16,7 +16,7 @@ function Home() {
           Fullstack Developer
         </h2>
       </div>
-      <div className="flex flex-col">
+      <div className="flex f2lex-col">
         <div className="lg:w-1/2 md:p-12">
           <h3 className="text-2xl font-semibold text-pink-400 pt-5 md:pt-24">Un poco de mi</h3>
           <p className="text-pink-50 text-left">
