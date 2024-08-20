@@ -7,7 +7,7 @@ const projects = [
     imageUrl: "https://via.placeholder.com/300",
     repoUrl: "https://github.com/username/project-one",
     demoUrl: "https://project-one-demo.com",
-    isCompleted: true,
+    isCompleted: false,
   },
   {
     title: "Project Two",
