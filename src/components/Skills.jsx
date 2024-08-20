@@ -16,9 +16,10 @@ import css from "../assets/icons/css.svg";
 import express from "../assets/icons/express.svg";
 import docker from "../assets/icons/docker.svg";
 import typescript from "../assets/icons/typescript.svg";
-import next from "../assets/icons/next.svg";
+import angular from "../assets/icons/angular.svg";
 import kotlin from "../assets/icons/kotlin.svg";
 import swift from "../assets/icons/swift.svg";
+import nest from "../assets/icons/nest.svg";
 
 const learnedSkills = [
   { name: "HTML", icon: html },
@@ -40,7 +41,8 @@ const learnedSkills = [
 ];
 
 const learningSkills = [
-  { name: "Next.js", icon: next },
+  { name: "Angular", icon: angular },
+  {name: "NestJs", icon: nest},
   { name: "Docker", icon: docker },
   { name: "TypeScript", icon: typescript },
 ];
