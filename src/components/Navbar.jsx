@@ -16,8 +16,8 @@ const Navbar = () => {
                         <Link
                             to={link.to}
                             smooth={true}
-                            duration={500}
-                            className="text-pink cursor-pointer hover:text-mauve"
+                            duration={250}
+                            className="text-nowrap text-pink cursor-pointer hover:text-mauve"
                         >
                             {link.text}
                         </Link>
