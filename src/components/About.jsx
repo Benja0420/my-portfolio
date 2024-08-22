@@ -20,7 +20,9 @@ const About = () => {
                 conocidos, ya sea formateando sus computadores o arreglando
                 programas que no funcionan. Además, disfruto mucho trabajando
                 con celulares Android, flasheando e instalando ROMs customizadas
-                como LineageOS.
+                como LineageOS. También me gusta probar distintos sabores de
+                Linux y personalizarlos, además de tener experiencia haciendo
+                Hackintosh en distintos equipos.
               </p>
             </div>
             <div className="p-6">
