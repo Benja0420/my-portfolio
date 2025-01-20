@@ -2,12 +2,12 @@ import { Element } from "react-scroll";
 
 const projects = [
   {
-    title: "Project One",
-    description: "Description of project one.",
-    imageUrl: "https://via.placeholder.com/300",
-    repoUrl: "https://github.com/username/project-one",
-    demoUrl: "https://project-one-demo.com",
-    isCompleted: false,
+    title: "Minga",
+    description: "A platform for viewing and sharing Mangas.",
+    imageUrl: "/src/assets/img/minga.jpg",
+    repoUrl: "https://github.com/Benja0420/mingaFront",
+    demoUrl: "https://minwafront.vercel.app/",
+    isCompleted: true,
   },
   {
     title: "Project Two",
