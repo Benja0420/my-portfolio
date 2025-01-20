@@ -4,9 +4,12 @@ import minga from "../assets/img/minga.jpg";
 const projects = [
   {
     title: "Minga",
-    description: "A platform for viewing and sharing Mangas.",
+    description: "Una plataforma para ver y compartir tus mangas.",
     imageUrl: minga,
+    repoName: "Repositorio frontend",
     repoUrl: "https://github.com/Benja0420/mingaFront",
+    repoName2: "Repositorio backend",
+    repoUrl2: "https://github.com/Benja0420/mingaBack",
     demoUrl: "https://minwafront.vercel.app/",
     isCompleted: true,
   },
@@ -14,6 +17,7 @@ const projects = [
     title: "Project Two",
     description: "Description of project two.",
     imageUrl: "https://via.placeholder.com/300",
+    repoName: "Repositorio",
     repoUrl: "https://github.com/username/project-two",
     demoUrl: "https://project-two-demo.com",
     isCompleted: false,
@@ -22,6 +26,7 @@ const projects = [
     title: "Project Three",
     description: "Description of project three.",
     imageUrl: "https://via.placeholder.com/300",
+    repoName: "Repositorio",
     repoUrl: "https://github.com/username/project-three",
     demoUrl: "https://project-three-demo.com",
     isCompleted: false,
@@ -64,8 +69,18 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="bg-lavender text-white py-2 px-4 rounded hover:bg-blue transition duration-200"
                 >
-                  Repo
+                  {project.repoName}
                 </a>
+                {project.repoUrl2 && (
+                  <a
+                    href={project.repoUrl2}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-lavender text-white py-2 px-4 rounded hover:bg-blue transition duration-200"
+                  >
+                    {project.repoName2}
+                  </a>
+                )}
                 <a
                   href={project.demoUrl}
                   target="_blank"
