@@ -1,10 +1,11 @@
 import { Element } from "react-scroll";
+import minga from "../assets/img/minga.jpg";
 
 const projects = [
   {
     title: "Minga",
     description: "A platform for viewing and sharing Mangas.",
-    imageUrl: "/src/assets/img/minga.jpg",
+    imageUrl: minga,
     repoUrl: "https://github.com/Benja0420/mingaFront",
     demoUrl: "https://minwafront.vercel.app/",
     isCompleted: true,
