@@ -41,14 +41,14 @@ const learnedSkills = [
 ];
 
 const learningSkills = [
-  { name: "Angular", icon: angular },
-  {name: "NestJs", icon: nest},
+  { name: "Kotlin", icon: kotlin },
   { name: "Docker", icon: docker },
   { name: "TypeScript", icon: typescript },
 ];
 
 const interestedSkills = [
-  { name: "Kotlin", icon: kotlin },
+  { name: "Angular", icon: angular },
+  { name: "NestJs", icon: nest },
   { name: "Swift", icon: swift },
 ];
 

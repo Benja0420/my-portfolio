@@ -37,7 +37,7 @@ const Projects = () => {
   return (
     <Element name="projects" className="bg-base min-h-[100vh] py-20 px-4">
       <h2 className="text-pink-400 font-semibold text-4xl text-center mb-8">
-        Projects
+        Proyectos
       </h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
@@ -48,7 +48,7 @@ const Projects = () => {
             {!project.isCompleted && (
               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
                 <span className="text-white text-2xl font-semibold transform rotate-45 bg-red-500 px-36 py-1">
-                  Site Under Construction
+                  Sitio en construcción
                 </span>
               </div>
             )}
