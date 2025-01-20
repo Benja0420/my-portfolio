@@ -1,4 +1,6 @@
 import { Element } from "react-scroll";
+import PropTypes from "prop-types";
+
 import macos from "../assets/icons/macos.svg";
 import tailwind from "../assets/icons/tailwind.svg";
 import react from "../assets/icons/react.svg";
@@ -69,6 +71,16 @@ const SkillList = ({ title, skills }) => (
     </ul>
   </div>
 );
+
+SkillList.propTypes = {
+  title: PropTypes.string.isRequired,
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      icon: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 const Skills = () => {
   return (
