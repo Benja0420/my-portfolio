@@ -14,18 +14,18 @@ const projects = [
     isCompleted: true,
   },
   {
-    title: "Project Two",
-    description: "Description of project two.",
-    imageUrl: "https://via.placeholder.com/300",
+    title: "Proyecto dos",
+    description: "Descripción del proyecto dos.",
+    imageUrl: "https://placehold.co/1900x914?text=Hola\nMundo",
     repoName: "Repositorio",
     repoUrl: "https://github.com/username/project-two",
     demoUrl: "https://project-two-demo.com",
     isCompleted: false,
   },
   {
-    title: "Project Three",
-    description: "Description of project three.",
-    imageUrl: "https://via.placeholder.com/300",
+    title: "Proyecto tres",
+    description: "Descripción del proyecto tres.",
+    imageUrl: "https://placehold.co/1900x914?text=Hola\nMundo",
     repoName: "Repositorio",
     repoUrl: "https://github.com/username/project-three",
     demoUrl: "https://project-three-demo.com",
@@ -47,7 +47,7 @@ const Projects = () => {
           >
             {!project.isCompleted && (
               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
-                <span className="text-white text-2xl font-semibold transform rotate-45 bg-red-500 px-36 py-1">
+                <span className="text-white text-2xl text-center font-semibold transform rotate-45 bg-red-500 px-80 py-1">
                   Sitio en construcción
                 </span>
               </div>
@@ -55,7 +55,7 @@ const Projects = () => {
             <img
               src={project.imageUrl}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-[calc(100vw * 9/16)] object-cover"
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-pink-400 mb-4">
