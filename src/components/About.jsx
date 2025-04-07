@@ -32,7 +32,7 @@ const About = () => {
               <p className="text-pink-50 mb-4 ">
                 Actualmente, me dedico a ampliar mis conocimientos y habilidades
                 en tecnología. Estoy aprendiendo programación, enfocándome en
-                lenguajes como TypeScript y herramientas como Docker. En mi
+                lenguajes como Python, TypeScript y herramientas como Docker. En mi
                 tiempo libre, disfruto viendo anime, saliendo en bicicleta,
                 juegos de mesa con los amigos y escalando. Mi pasión por la
                 tecnología y el deseo de ayudar a otros siempre me motiva a

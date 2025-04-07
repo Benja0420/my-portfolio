@@ -20,10 +20,11 @@ function Home() {
         <div className="lg:w-1/2 md:p-12">
           <h3 className="text-2xl font-semibold text-pink-400 pt-5 md:pt-24">Un poco de mi</h3>
           <p className="text-pink-50 text-left">
-            Soy Desarrollador Full Stack. Cuento con habilidades técnicas y
+            Soy Desarrollador Full Stack y estudiante de Ingeniería en Informatica. Cuento con habilidades técnicas y
             colaborativas en un entorno ágil. También reparo artefactos
             tecnológicos por hobby. La curiosidad por la tecnología me llevó a
-            aprender de manera autodidacta sobre el mundo IT.
+            aprender de manera autodidacta sobre el mundo IT. Además me interesa
+            el desarrollo de apps móviles y la inteligencia artificial.
           </p>
           <div className="flex flex-wrap gap-2">
             <ResumeButton />
