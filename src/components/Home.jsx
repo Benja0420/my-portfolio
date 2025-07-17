@@ -2,7 +2,6 @@ import { Element } from "react-scroll";
 import ResumeButton from "./buttons/ResumeButton.jsx";
 import LinkedinButton from "./buttons/LinkedinButton.jsx";
 import GithubButton from "./buttons/GithubButton.jsx";
-import YoutubeButton from "./buttons/YoutubeButton.jsx";
 import AnimationHome from "./AnimationHome.jsx";
 
 function Home() {
@@ -30,7 +29,6 @@ function Home() {
             <ResumeButton />
             <LinkedinButton />
             <GithubButton />
-            <YoutubeButton />
           </div>
         </div>
         <div className="hidden lg:block lg:absolute lg:right-0 lg:top-20">
