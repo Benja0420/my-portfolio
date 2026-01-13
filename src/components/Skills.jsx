@@ -103,7 +103,7 @@ const Skills = () => {
             <div className="inline-flex items-center">
               <span className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500/10 to-pink-400/10 px-4 py-2 text-sm font-semibold text-pink-400">
                 <span className="h-2 w-2 rounded-full bg-pink-400"></span>
-                Expertise
+                Expertiz
               </span>
             </div>
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-5xl">

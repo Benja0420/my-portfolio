@@ -16,7 +16,7 @@ function Home() {
               <div className="inline-flex items-center justify-start">
                 <span className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500/10 to-pink-400/10 px-4 py-2 text-sm font-semibold text-pink-400">
                   <span className="h-2 w-2 rounded-full bg-pink-400"></span>
-                  Welcome to my portfolio
+                  Bienvenido a mi portafolio
                 </span>
               </div>
 
