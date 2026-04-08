@@ -33,6 +33,7 @@ const learnedSkills = [
   { name: "Express", icon: express },
   { name: "Java", icon: java },
   { name: "Spring", icon: spring },
+  { name: "Kotlin", icon: kotlin },
   { name: "MySQL", icon: mysql },
   { name: "MongoDB", icon: mongo },
   { name: "Tailwind CSS", icon: tailwind },
@@ -43,15 +44,14 @@ const learnedSkills = [
 ];
 
 const learningSkills = [
-  { name: "Kotlin", icon: kotlin },
   { name: "Docker", icon: docker },
   { name: "TypeScript", icon: typescript },
+  { name: "Swift", icon: swift },
 ];
 
 const interestedSkills = [
   { name: "Angular", icon: angular },
   { name: "NestJs", icon: nest },
-  { name: "Swift", icon: swift },
 ];
 
 const SkillList = ({ title, skills, color }) => (
@@ -88,7 +88,7 @@ SkillList.propTypes = {
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       icon: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
   color: PropTypes.string,
 };
@@ -114,7 +114,6 @@ const Skills = () => {
             </h2>
           </div>
 
-          {/* Skills Grid */}
           <div className="grid gap-12 md:grid-cols-3">
             <SkillList
               title="Aprendidas"
@@ -134,7 +133,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Decorative background */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute -top-40 right-0 -z-10 transform-gpu blur-3xl sm:-top-80">
             <div
