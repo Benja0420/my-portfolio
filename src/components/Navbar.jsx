@@ -6,6 +6,7 @@ const Navbar = () => {
         { to: "projects", text: "Proyectos" },
         { to: "skills", text: "Habilidades" },
         { to: "about", text: "Sobre mí" },
+        { to: "contact", text: "Contacto" },
     ];
 
     return (
