@@ -47,7 +47,7 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    
+
     // Clear error when user starts typing
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: '' }));
@@ -65,7 +65,7 @@ const Contact = () => {
     // Simulate form submission
     try {
       await new Promise((resolve) => setTimeout(resolve, 1500));
-      
+
       // Simulate success (you can replace this with actual API call)
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
@@ -131,18 +131,16 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`peer w-full rounded-lg border bg-gray-800/50 px-4 pb-2 pt-6 text-white placeholder-transparent outline-none transition-all duration-200 focus:ring-2 ${
-                      errors.name
-                        ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20'
-                        : 'border-gray-700 focus:border-pink-400 focus:ring-pink-400/20'
-                    }`}
+                    className={`peer w-full rounded-lg border bg-gray-800/50 px-4 pb-2 pt-6 text-white placeholder-transparent outline-none transition-all duration-200 focus:ring-2 ${errors.name
+                      ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20'
+                      : 'border-gray-700 focus:border-pink-400 focus:ring-pink-400/20'
+                      }`}
                     placeholder="Nombre"
                   />
                   <label
                     htmlFor="name"
-                    className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs ${
-                      errors.name ? 'text-red-400' : 'text-white peer-focus:text-pink-400'
-                    }`}
+                    className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs ${errors.name ? 'text-red-400' : 'text-white peer-focus:text-pink-400'
+                      }`}
                   >
                     Nombre
                   </label>
@@ -159,18 +157,16 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`peer w-full rounded-lg border bg-gray-800/50 px-4 pb-2 pt-6 text-white placeholder-transparent outline-none transition-all duration-200 focus:ring-2 ${
-                      errors.email
-                        ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20'
-                        : 'border-gray-700 focus:border-pink-400 focus:ring-pink-400/20'
-                    }`}
+                    className={`peer w-full rounded-lg border bg-gray-800/50 px-4 pb-2 pt-6 text-white placeholder-transparent outline-none transition-all duration-200 focus:ring-2 ${errors.email
+                      ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20'
+                      : 'border-gray-700 focus:border-pink-400 focus:ring-pink-400/20'
+                      }`}
                     placeholder="Email"
                   />
                   <label
                     htmlFor="email"
-                    className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs ${
-                      errors.email ? 'text-red-400' : 'text-white peer-focus:text-pink-400'
-                    }`}
+                    className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs ${errors.email ? 'text-red-400' : 'text-white peer-focus:text-pink-400'
+                      }`}
                   >
                     Email
                   </label>
@@ -187,18 +183,16 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className={`peer w-full rounded-lg border bg-gray-800/50 px-4 pb-2 pt-6 text-white placeholder-transparent outline-none transition-all duration-200 focus:ring-2 ${
-                      errors.subject
-                        ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20'
-                        : 'border-gray-700 focus:border-pink-400 focus:ring-pink-400/20'
-                    }`}
+                    className={`peer w-full rounded-lg border bg-gray-800/50 px-4 pb-2 pt-6 text-white placeholder-transparent outline-none transition-all duration-200 focus:ring-2 ${errors.subject
+                      ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20'
+                      : 'border-gray-700 focus:border-pink-400 focus:ring-pink-400/20'
+                      }`}
                     placeholder="Asunto"
                   />
                   <label
                     htmlFor="subject"
-                    className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs ${
-                      errors.subject ? 'text-red-400' : 'text-white peer-focus:text-pink-400'
-                    }`}
+                    className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs ${errors.subject ? 'text-red-400' : 'text-white peer-focus:text-pink-400'
+                      }`}
                   >
                     Asunto
                   </label>
@@ -215,18 +209,16 @@ const Contact = () => {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className={`peer w-full resize-none rounded-lg border bg-gray-800/50 px-4 pb-2 pt-6 text-white placeholder-transparent outline-none transition-all duration-200 focus:ring-2 ${
-                      errors.message
-                        ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20'
-                        : 'border-gray-700 focus:border-pink-400 focus:ring-pink-400/20'
-                    }`}
+                    className={`peer w-full resize-none rounded-lg border bg-gray-800/50 px-4 pb-2 pt-6 text-white placeholder-transparent outline-none transition-all duration-200 focus:ring-2 ${errors.message
+                      ? 'border-red-500 focus:border-red-500 focus:ring-red-500/20'
+                      : 'border-gray-700 focus:border-pink-400 focus:ring-pink-400/20'
+                      }`}
                     placeholder="Mensaje"
                   />
                   <label
                     htmlFor="message"
-                    className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs ${
-                      errors.message ? 'text-red-400' : 'text-white peer-focus:text-pink-400'
-                    }`}
+                    className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-xs ${errors.message ? 'text-red-400' : 'text-white peer-focus:text-pink-400'
+                      }`}
                   >
                     Mensaje
                   </label>
@@ -247,7 +239,7 @@ const Contact = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                   </span>
-                  
+
                   {/* Loading Spinner */}
                   {isSubmitting && (
                     <span className="absolute inset-0 flex items-center justify-center">
