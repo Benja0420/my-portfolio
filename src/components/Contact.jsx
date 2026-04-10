@@ -141,7 +141,7 @@ const Contact = () => {
                   <label
                     htmlFor="name"
                     className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs ${
-                      errors.name ? 'text-red-400' : 'text-gray-400 peer-focus:text-pink-400'
+                      errors.name ? 'text-red-400' : 'text-gray-300 peer-focus:text-pink-400'
                     }`}
                   >
                     Nombre
@@ -169,7 +169,7 @@ const Contact = () => {
                   <label
                     htmlFor="email"
                     className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs ${
-                      errors.email ? 'text-red-400' : 'text-gray-400 peer-focus:text-pink-400'
+                      errors.email ? 'text-red-400' : 'text-gray-300 peer-focus:text-pink-400'
                     }`}
                   >
                     Email
@@ -197,7 +197,7 @@ const Contact = () => {
                   <label
                     htmlFor="subject"
                     className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs ${
-                      errors.subject ? 'text-red-400' : 'text-gray-400 peer-focus:text-pink-400'
+                      errors.subject ? 'text-red-400' : 'text-gray-300 peer-focus:text-pink-400'
                     }`}
                   >
                     Asunto
@@ -225,7 +225,7 @@ const Contact = () => {
                   <label
                     htmlFor="message"
                     className={`absolute left-4 top-2 text-xs transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs ${
-                      errors.message ? 'text-red-400' : 'text-gray-400 peer-focus:text-pink-400'
+                      errors.message ? 'text-red-400' : 'text-gray-300 peer-focus:text-pink-400'
                     }`}
                   >
                     Mensaje
