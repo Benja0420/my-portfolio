@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply min-h-screen bg-base text-gray-100 antialiased;
+  }
+
+  /* Red de seguridad anti-overflow horizontal: no crea scroll container ni rompe `fixed`. */
+  #root {
+    overflow-x: clip;
+  }
+}
