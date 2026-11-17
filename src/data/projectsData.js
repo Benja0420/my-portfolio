@@ -5,11 +5,15 @@ export const PROJECT_STATUS = {
   IN_PROGRESS: 'in-progress',
 };
 
-const PLACEHOLDER_IMAGE = 'https://placehold.co/1600x900/1e1e2e/f5c2e7?text=Pr%C3%B3ximamente';
-
 /**
  * Project: {
- *   id: string, title: string, description: string,
+ *   id: string,
+ *   title: string,
+ *   role: string,
+ *   summary: string,
+ *   description: string,
+ *   stack: string[],
+ *   highlights: string[],
  *   image: { src: string, alt: string, width: number, height: number },
  *   status: 'completed' | 'in-progress',
  *   demoUrl: string | null,
@@ -20,7 +24,17 @@ export const PROJECTS = [
   {
     id: "minga",
     title: "Minga",
-    description: "Una plataforma para ver y compartir tus mangas.",
+    role: "Full Stack Developer",
+    summary:
+      "Plataforma web full stack para explorar, leer y publicar mangas en línea.",
+    description:
+      "Aplicación SPA con arquitectura cliente-servidor desacoplada, desarrollada en equipo aplicando metodologías ágiles (Scrum) durante el bootcamp intensivo de Mindhub.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    highlights: [
+      "Frontend reactivo con catálogo filtrable, vistas de detalle y navegación fluida.",
+      "API RESTful en Node.js + Express con persistencia en MongoDB y autenticación.",
+      "Repositorios desacoplados (Frontend y Backend) y despliegue continuo en Vercel.",
+    ],
     image: {
       src: mingaImage,
       alt: "Captura de pantalla de la plataforma Minga",
@@ -41,23 +55,5 @@ export const PROJECTS = [
         url: "https://github.com/Benja0420/mingaBack",
       },
     ],
-  },
-  {
-    id: "project-two",
-    title: "Proyecto dos",
-    description: "Descripción del proyecto dos.",
-    image: { src: PLACEHOLDER_IMAGE, alt: "", width: 1600, height: 900 },
-    status: PROJECT_STATUS.IN_PROGRESS,
-    demoUrl: null,
-    repositories: [],
-  },
-  {
-    id: "project-three",
-    title: "Proyecto tres",
-    description: "Descripción del proyecto tres.",
-    image: { src: PLACEHOLDER_IMAGE, alt: "", width: 1600, height: 900 },
-    status: PROJECT_STATUS.IN_PROGRESS,
-    demoUrl: null,
-    repositories: [],
   },
 ];

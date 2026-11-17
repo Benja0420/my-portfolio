@@ -1,18 +1,25 @@
 export const ABOUT_CARDS = [
   {
-    id: 'who',
-    eyebrow: 'Quién soy',
-    title: 'Mi Pasión por la Tecnología',
+    id: 'profile',
+    eyebrow: 'Perfil técnico',
+    title: 'Resolución de Problemas y Desarrollo',
     accent: 'pink',
     body:
-      'Hola, soy Benjamín y vivo en Chillán, una ciudad pequeña de Chile. Desde que era pequeño, me ha apasionado la tecnología. Me encanta desarmar y armar cosas, lo que me ha permitido resolver diversos problemas tecnológicos de amigos, familiares y conocidos, ya sea formateando sus computadores o arreglando programas que no funcionan. Además, disfruto mucho trabajando con celulares Android, flasheando e instalando ROMs customizadas como LineageOS. También me gusta probar distintos sabores de Linux y personalizarlos, además de tener experiencia haciendo Hackintosh en distintos equipos.',
+      'Desarrollador Full Stack y móvil residente en Chillán, Chile. Combino formación intensiva en stacks modernos (MERN, Java/Spring y Android con Kotlin) con estudios en Ingeniería en Informática. Mi afinidad por entender sistemas a fondo —desde configurar entornos Linux hasta flashear ROMs personalizadas en Android— me permite diagnosticar errores con rapidez y adaptarme a nuevos equipos de desarrollo ágil.',
   },
   {
-    id: 'now',
+    id: 'focus',
     eyebrow: 'Actualidad',
-    title: 'Expandiendo Conocimientos',
+    title: 'Enfoque y Aprendizaje Continuo',
     accent: 'purple',
     body:
-      'Actualmente, me dedico a ampliar mis conocimientos y habilidades en tecnología. Estoy aprendiendo programación, enfocándome en lenguajes como Python, TypeScript y herramientas como Docker. En mi tiempo libre, disfruto viendo anime, saliendo en bicicleta, juegos de mesa con los amigos y escalando. Mi pasión por la tecnología y el deseo de ayudar a otros siempre me motiva a seguir aprendiendo y mejorando.',
+      'Actualmente profundizo en arquitectura de software con TypeScript, contenedores Docker y desarrollo nativo en Android. Fuera del código, disfruto del ciclismo, la escalada, el anime y los juegos de mesa con amigos: actividades que refuerzan la constancia, el trabajo en equipo y la estrategia.',
   },
+];
+
+export const QUICK_FACTS = [
+  { id: 'location', label: 'Ubicación', value: 'Chillán, Chile (disponible remoto / híbrido)' },
+  { id: 'training', label: 'Formación técnica', value: '+1.615 horas certificadas + Ing. en Informática' },
+  { id: 'focus', label: 'Especialidad', value: 'Web Full Stack (MERN / Java) y Android (Kotlin)' },
+  { id: 'methodology', label: 'Forma de trabajo', value: 'Metodologías ágiles (Scrum), Git/GitHub y trabajo colaborativo' },
 ];

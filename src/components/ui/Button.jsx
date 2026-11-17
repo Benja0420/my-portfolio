@@ -2,18 +2,22 @@ import PropTypes from 'prop-types';
 import cn from '../../utils/cn.js';
 
 const BASE =
-  'inline-flex select-none items-center justify-center gap-2 rounded-xl font-semibold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-400 focus-visible:ring-offset-2 focus-visible:ring-offset-base disabled:cursor-not-allowed disabled:opacity-60';
+  'inline-flex cursor-pointer select-none items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-400 focus-visible:ring-offset-2 focus-visible:ring-offset-base disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-60';
 
 const VARIANTS = {
-  primary: 'bg-pink-500 text-white shadow-lg shadow-pink-500/20 hover:bg-pink-600 active:bg-pink-700',
+  primary:
+    'bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-lg shadow-pink-500/25 hover:from-pink-600 hover:to-pink-500 hover:shadow-xl hover:shadow-pink-500/40 motion-safe:hover:-translate-y-0.5 active:translate-y-0',
   secondary:
-    'bg-white/5 text-gray-100 ring-1 ring-inset ring-white/15 hover:bg-white/10 hover:text-pink-300 active:bg-white/15',
-  ghost: 'text-gray-300 hover:bg-white/5 hover:text-pink-400 active:bg-white/10',
+    'bg-pink-500/15 text-white ring-1 ring-inset ring-pink-400/50 shadow-md shadow-pink-500/10 hover:bg-pink-500 hover:text-white hover:ring-pink-400 hover:shadow-lg hover:shadow-pink-500/30 motion-safe:hover:-translate-y-0.5 active:translate-y-0',
+  ghost:
+    'text-gray-200 hover:bg-pink-500/15 hover:text-pink-300 active:bg-pink-500/25',
 };
 
+// Nota: no usar `text-base` porque @catppuccin/tailwindcss define el color `base` (#1e1e2e)
+// y genera `.text-base { color: rgb(30, 30, 46) }`, oscureciendo el texto del botón.
 const SIZES = {
   sm: 'min-h-11 px-4 py-2 text-sm',
-  md: 'min-h-12 px-5 py-3 text-sm sm:text-base',
+  md: 'min-h-12 px-5 py-3 text-sm sm:text-[0.9375rem]',
   icon: 'h-11 w-11 p-0',
 };
 

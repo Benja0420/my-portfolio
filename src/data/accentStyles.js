@@ -27,6 +27,22 @@ export const ACCENT_STYLES = {
     overlay: 'from-blue-600 to-blue-400',
     hoverText: 'group-hover:text-blue-400',
   },
+  green: {
+    text: 'text-emerald-400',
+    pill: 'bg-emerald-500/10 text-emerald-400',
+    dot: 'bg-emerald-400',
+    shadow: 'hover:shadow-emerald-500/20',
+    overlay: 'from-emerald-600 to-emerald-400',
+    hoverText: 'group-hover:text-emerald-400',
+  },
+  amber: {
+    text: 'text-amber-400',
+    pill: 'bg-amber-500/10 text-amber-400',
+    dot: 'bg-amber-400',
+    shadow: 'hover:shadow-amber-500/20',
+    overlay: 'from-amber-600 to-amber-400',
+    hoverText: 'group-hover:text-amber-400',
+  },
 };
 
 export const ACCENT_KEYS = Object.keys(ACCENT_STYLES);

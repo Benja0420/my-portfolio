@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV - Benjamín Sepúlveda Meriño | Full Stack Developer</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    html, body {
+      width: 210mm;
+      height: 297mm;
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      font-size: 9.3pt;
+      line-height: 1.42;
+      overflow: hidden;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .page {
+      width: 210mm;
+      height: 297mm;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #181825 0%, #1e1e2e 65%, #26233a 100%);
+      color: #f8fafc;
+      padding: 18px 28px 16px 28px;
+      border-bottom: 3.5px solid #ec4899;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .name {
+      font-size: 21pt;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      color: #ffffff;
+      line-height: 1.1;
+    }
+    .role {
+      margin-top: 4px;
+      font-size: 10.8pt;
+      font-weight: 600;
+      color: #f472b6;
+      letter-spacing: 0.2px;
+    }
+    .badge-hours {
+      background: rgba(244, 114, 182, 0.14);
+      border: 1px solid rgba(244, 114, 182, 0.45);
+      color: #fbcfe8;
+      font-size: 8.2pt;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+    .contact-bar {
+      margin-top: 11px;
+      padding-top: 9px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 16px;
+      font-size: 8.4pt;
+      color: #e2e8f0;
+    }
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .contact-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #f472b6;
+      display: inline-block;
+    }
+    /* Main Grid */
+    .body-grid {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 63% 37%;
+    }
+    .col-main {
+      padding: 16px 22px 16px 28px;
+      background: #ffffff;
+    }
+    .col-side {
+      padding: 16px 24px 16px 20px;
+      background: #f8fafc;
+      border-left: 1px solid #e2e8f0;
+    }
+    .section {
+      margin-bottom: 14px;
+    }
+    .section:last-child {
+      margin-bottom: 0;
+    }
+    .section-title {
+      font-size: 9.5pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #0f172a;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .section-title::before {
+      content: '';
+      width: 4px;
+      height: 12px;
+      border-radius: 2px;
+      background: #db2777;
+      display: inline-block;
+    }
+    .summary-text {
+      color: #334155;
+      font-size: 9pt;
+      line-height: 1.46;
+      text-align: justify;
+    }
+    .summary-text strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+    /* Project / Experience items */
+    .item {
+      margin-bottom: 11px;
+    }
+    .item:last-child {
+      margin-bottom: 0;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .item-title {
+      font-size: 9.8pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .item-role {
+      font-size: 8.6pt;
+      font-weight: 600;
+      color: #be185d;
+    }
+    .item-date {
+      font-size: 8pt;
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+    }
+    .item-links {
+      margin-top: 2px;
+      margin-bottom: 4px;
+      font-size: 8pt;
+      color: #475569;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 10px;
+    }
+    .item-links a {
+      color: #0284c7;
+      font-weight: 600;
+    }
+    .stack-inline {
+      font-size: 8pt;
+      color: #475569;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    ul.bullets {
+      padding-left: 14px;
+      color: #334155;
+      font-size: 8.75pt;
+      line-height: 1.42;
+    }
+    ul.bullets li {
+      margin-bottom: 2.5px;
+    }
+    ul.bullets li strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+    /* Education card in main column */
+    .edu-box {
+      padding: 8px 11px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-left: 3px solid #db2777;
+      border-radius: 6px;
+    }
+    /* Sidebar elements */
+    .skill-group {
+      margin-bottom: 9px;
+    }
+    .skill-group:last-child {
+      margin-bottom: 0;
+    }
+    .skill-group-title {
+      font-size: 8.4pt;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 4px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .tag {
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      color: #1e293b;
+      font-size: 7.8pt;
+      font-weight: 600;
+      padding: 2px 6.5px;
+      border-radius: 4px;
+    }
+    .tag-primary {
+      background: #fdf2f8;
+      border-color: #f9a8d4;
+      color: #9d174d;
+    }
+    .cert-item {
+      margin-bottom: 8.5px;
+      padding-bottom: 7.5px;
+      border-bottom: 1px dashed #cbd5e1;
+    }
+    .cert-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .cert-title {
+      font-size: 8.6pt;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.25;
+    }
+    .cert-meta {
+      font-size: 7.8pt;
+      color: #475569;
+      margin-top: 2px;
+    }
+    .cert-hours {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      font-weight: 700;
+      font-size: 7.4pt;
+      padding: 0.5px 5px;
+      border-radius: 3px;
+      margin-right: 4px;
+    }
+    .cert-link {
+      color: #0284c7;
+      font-weight: 600;
+      font-size: 7.6pt;
+    }
+    .soft-list {
+      list-style: none;
+      padding: 0;
+      font-size: 8.3pt;
+      color: #334155;
+    }
+    .soft-list li {
+      margin-bottom: 3.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .soft-list li::before {
+      content: '▸';
+      color: #db2777;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-top">
+        <div>
+          <h1 class="name">BENJAMÍN SEPÚLVEDA MERIÑO</h1>
+          <p class="role">Desarrollador Full Stack (MERN · Java / Spring Boot · Mobile)</p>
+        </div>
+        <div class="badge-hours">+1.615 hrs en Bootcamps &amp; Certificaciones TI</div>
+      </div>
+      <div class="contact-bar">
+        <span class="contact-item"><span class="contact-dot"></span>Chillán, Chile (Remoto / Híbrido / Presencial)</span>
+        <span class="contact-item"><span class="contact-dot"></span><a href="tel:+56968056877">+56 9 6805 6877</a></span>
+        <span class="contact-item"><span class="contact-dot"></span><a href="mailto:benjaminsepulveda.0420@gmail.com">benjaminsepulveda.0420@gmail.com</a></span>
+        <span class="contact-item"><span class="contact-dot"></span><a href="https://www.linkedin.com/in/benjamindsepulveda/">linkedin.com/in/benjamindsepulveda</a></span>
+        <span class="contact-item"><span class="contact-dot"></span><a href="https://github.com/Benja0420">github.com/Benja0420</a></span>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="body-grid">
+      <!-- MAIN COLUMN -->
+      <main class="col-main">
+        <section class="section">
+          <h2 class="section-title">Perfil Profesional</h2>
+          <p class="summary-text">
+            <strong>Desarrollador Full Stack</strong> y estudiante de <strong>Ingeniería en Informática</strong> con más de <strong>1.615 horas acreditadas</strong> de entrenamiento intensivo en desarrollo web y móvil (Mindhub, Talento Digital / SENCE y Cisco Networking Academy). Especializado en la construcción de aplicaciones web de extremo a extremo utilizando el stack <strong>MERN (MongoDB, Express, React, Node.js)</strong> y el ecosistema <strong>Java / Spring Boot con MySQL</strong>, además de desarrollo móvil con <strong>Kotlin (Android)</strong>. Enfocado en escribir código limpio, modular y escalable, integrando APIs RESTful documentadas, autenticación segura y metodologías ágiles (<strong>Scrum</strong>).
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Proyectos de Desarrollo Destacados</h2>
+
+          <div class="item">
+            <div class="item-header">
+              <div>
+                <span class="item-title">Minga — Plataforma Web Full Stack de Mangas</span>
+                <span class="item-role"> · Full Stack Developer</span>
+              </div>
+              <span class="item-date">Stack MERN · Scrum</span>
+            </div>
+            <div class="item-links">
+              <a href="https://minga-2-front.vercel.app/">↗ Demo Producción</a> ·
+              <a href="https://github.com/Benja0420/mingaFront">↗ Repo Frontend</a> ·
+              <a href="https://github.com/Benja0420/mingaBack">↗ Repo Backend</a>
+            </div>
+            <ul class="bullets">
+              <li>Desarrolló una aplicación SPA en <strong>React</strong> y <strong>Tailwind CSS</strong> bajo arquitectura cliente-servidor desacoplada, implementando catálogo con filtros dinámicos, vistas de detalle y lectura fluida.</li>
+              <li>Diseñó e implementó una <strong>API RESTful</strong> con <strong>Node.js</strong>, <strong>Express</strong> y <strong>MongoDB (Mongoose)</strong>, integrando autenticación, validación de esquemas, control de sesiones y documentación con <strong>Swagger (OpenAPI)</strong>.</li>
+              <li>Colaboró en equipo aplicando metodología ágil <strong>Scrum</strong>, gestión de ramas y Pull Requests en <strong>Git/GitHub</strong>, y despliegue continuo (CI/CD) de frontend y backend en <strong>Vercel</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <div>
+                <span class="item-title">Portafolio Profesional &amp; Sistema de Componentes UI</span>
+                <span class="item-role"> · Frontend Developer</span>
+              </div>
+              <span class="item-date">React 18 · Vite · Tailwind</span>
+            </div>
+            <div class="item-links">
+              <a href="https://github.com/Benja0420">↗ GitHub @Benja0420</a>
+            </div>
+            <ul class="bullets">
+              <li>Construyó una SPA de alto rendimiento en <strong>React 18</strong>, <strong>Vite</strong> y <strong>Tailwind CSS</strong> utilizando una arquitectura modular guiada por datos (<em>data-driven UI</em>) y custom hooks reutilizables.</li>
+              <li>Implementó carga diferida de recursos pesados mediante <strong>IntersectionObserver</strong>, estándares de accesibilidad <strong>WCAG AA</strong> (navegación por teclado, atributos ARIA, gestión de foco), metadatos SEO/Open Graph e integración serverless de formularios.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <div>
+                <span class="item-title">Aplicaciones Full Stack Java &amp; Mobile Android</span>
+                <span class="item-role"> · Desarrollador en Formación Intensiva</span>
+              </div>
+              <span class="item-date">2024 – 2026</span>
+            </div>
+            <p class="stack-inline">Tecnologías: Java · Spring Boot · MySQL · Kotlin · Android SDK · Git</p>
+            <ul class="bullets">
+              <li><strong>Ecosistema Java / Spring Boot (480 hrs):</strong> Desarrollo de aplicaciones web bajo patrón <strong>MVC</strong> y servicios REST conectados a bases de datos relacionales <strong>MySQL</strong>, aplicando programación orientada a objetos (POO), consultas SQL y seguridad.</li>
+              <li><strong>Ecosistema Android Nativo (465 hrs):</strong> Creación de aplicaciones móviles en <strong>Kotlin</strong> con <strong>Android SDK</strong>, manejo del ciclo de vida de componentes, diseño de interfaces adaptables y consumo de APIs externas.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Educación Superior</h2>
+          <div class="edu-box">
+            <div class="item-header">
+              <span class="item-title">Ingeniería en Informática</span>
+              <span class="item-date">2025 – Presente (En curso)</span>
+            </div>
+            <div class="item-role" style="margin-top: 2px;">Instituto Profesional Santo Tomás · Sede Chillán, Chile</div>
+            <p style="font-size: 8.3pt; color: #475569; margin-top: 3px;">
+              Formación en ingeniería de software, estructuras de datos, arquitectura de sistemas, bases de datos relacionales, redes e infraestructura TI.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- SIDEBAR COLUMN -->
+      <aside class="col-side">
+        <section class="section">
+          <h2 class="section-title">Stack Tecnológico</h2>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Frontend</div>
+            <div class="tags">
+              <span class="tag tag-primary">React</span>
+              <span class="tag tag-primary">JavaScript (ES6+)</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">Vite</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Backend &amp; APIs</div>
+            <div class="tags">
+              <span class="tag tag-primary">Node.js</span>
+              <span class="tag tag-primary">Express.js</span>
+              <span class="tag tag-primary">Java</span>
+              <span class="tag tag-primary">Spring Boot</span>
+              <span class="tag">RESTful APIs</span>
+              <span class="tag">JWT Auth</span>
+              <span class="tag">Swagger / OpenAPI</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Bases de Datos</div>
+            <div class="tags">
+              <span class="tag tag-primary">MongoDB</span>
+              <span class="tag tag-primary">MySQL</span>
+              <span class="tag">Mongoose</span>
+              <span class="tag">Modelado SQL / NoSQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Desarrollo Móvil</div>
+            <div class="tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Android SDK</span>
+              <span class="tag">React Native</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Herramientas &amp; Entornos</div>
+            <div class="tags">
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Postman</span>
+              <span class="tag">Vercel</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Windows</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Certificaciones</h2>
+
+          <div class="cert-item">
+            <div class="cert-title">Desarrollo de Aplicaciones Móviles Android Trainee v2.0</div>
+            <div class="cert-meta">
+              <span class="cert-hours">465 hrs</span>Dic 2025 – Mar 2026<br />
+              SENCE · Talento Digital (97% asistencia)
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-title">IT Essentials: PC Hardware and Software</div>
+            <div class="cert-meta">
+              <span class="cert-hours">70 hrs</span>Jul 2025<br />
+              Cisco Networking Academy · IP Santo Tomás
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-title">Desarrollo de Aplicaciones Full Stack Java Trainee v2.0</div>
+            <div class="cert-meta">
+              <span class="cert-hours">480 hrs</span>Feb 2024 – Jul 2024<br />
+              SENCE · Reconversión Laboral (100% asistencia)
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-title">Bootcamp Desarrollador Web Full Stack MERN &amp; Mobile Apps</div>
+            <div class="cert-meta">
+              <span class="cert-hours">600 hrs</span>Oct 2023 · Mindhub<br />
+              <a class="cert-link" href="https://www.credly.com/go/xK8ygr4G">↗ Verificar credencial en Credly</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Metodologías y Enfoque</h2>
+          <ul class="soft-list">
+            <li>Desarrollo Ágil con <strong>Scrum</strong></li>
+            <li>Arquitectura Cliente-Servidor y MVC</li>
+            <li>Trabajo colaborativo con Gitflow / PRs</li>
+            <li>Soporte TI, redes y diagnóstico de sistemas</li>
+            <li>Aprendizaje continuo y adaptabilidad</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>

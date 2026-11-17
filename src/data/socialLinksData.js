@@ -6,7 +6,7 @@ export const SOCIAL_LINKS = [
   {
     id: 'resume',
     label: 'Currículum',
-    href: 'https://drive.google.com/file/d/1NGXHYdqKaFX8qRpMKHVsoQ_OvUYzBYmk/view',
+    href: '/CV_Benjamin_Sepulveda.pdf',
     icon: 'resume',
   },
   {

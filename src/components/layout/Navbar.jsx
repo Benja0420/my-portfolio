@@ -150,7 +150,7 @@ export default function Navbar() {
                     onClick={(event) => handleNavigate(event, link.id)}
                     aria-current={isActive ? 'location' : undefined}
                     className={cn(
-                      'flex min-h-12 w-full items-center rounded-xl px-4 text-base font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-pink-400',
+                      'flex min-h-12 w-full items-center rounded-xl px-4 text-[1rem] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-pink-400',
                       isActive
                         ? 'bg-pink-500/10 text-pink-400'
                         : 'text-gray-200 hover:bg-white/5 hover:text-pink-400',

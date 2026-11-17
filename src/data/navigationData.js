@@ -7,6 +7,7 @@ export const NAV_LINKS = [
   { id: 'home', label: 'Inicio', href: '#home' },
   { id: 'projects', label: 'Proyectos', href: '#projects' },
   { id: 'skills', label: 'Habilidades', href: '#skills' },
+  { id: 'education', label: 'Formación', href: '#education' },
   { id: 'about', label: 'Sobre mí', href: '#about' },
   { id: 'contact', label: 'Contacto', href: '#contact' },
 ];

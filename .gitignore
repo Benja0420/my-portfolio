@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Certificados originales con datos personales (RUT). Nunca versionar.
+src/assets/pdf/
+public

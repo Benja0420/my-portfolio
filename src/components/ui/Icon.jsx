@@ -41,6 +41,21 @@ const GLYPHS = {
       d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"
     />
   ),
+  location: (
+    <>
+      <path
+        {...STROKE}
+        d="M12 21s-6-5.25-6-10a6 6 0 1 1 12 0c0 4.75-6 10-6 10Z"
+      />
+      <circle {...STROKE} cx="12" cy="11" r="2.5" />
+    </>
+  ),
+  certificate: (
+    <path
+      {...STROKE}
+      d="M9 12l2 2 4-4m5-2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+    />
+  ),
 };
 
 export default function Icon({ name, className = 'h-5 w-5' }) {
@@ -62,6 +77,15 @@ export default function Icon({ name, className = 'h-5 w-5' }) {
 }
 
 Icon.propTypes = {
-  name: PropTypes.oneOf(['github', 'linkedin', 'resume', 'menu', 'close', 'external']).isRequired,
+  name: PropTypes.oneOf([
+    'github',
+    'linkedin',
+    'resume',
+    'menu',
+    'close',
+    'external',
+    'location',
+    'certificate',
+  ]).isRequired,
   className: PropTypes.string,
 };
