@@ -4,7 +4,9 @@ import SocialLinks from '../ui/SocialLinks.jsx';
 import cn from '../../utils/cn.js';
 
 const RAW_WEB3FORMS_KEY =
-  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || import.meta.env.VITE_WEB3FORMS_KEY || '';
+  import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ||
+  import.meta.env.VITE_WEB3FORMS_KEY ||
+  'c0765e53-70b2-4cc0-bfee-cedc7ac86550';
 const WEB3FORMS_ACCESS_KEY = RAW_WEB3FORMS_KEY.trim().replace(/^[^a-f0-9]+|[^a-f0-9]+$/gi, '');
 
 const FIELDS = [
